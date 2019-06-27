@@ -1,3 +1,57 @@
+
+.form-group{
+  margin-bottom: 15px;
+}
+input,
+textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  &:focus {
+    box-shadow: 0 0 4px 1px #ababce;
+  }
+}
+input {
+  height: 2.2rem;
+  padding-left: 15px;
+  border-radius: 30px;
+}
+textarea {
+  min-height: 150px;
+  border-radius: 4px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.login {
+  background: #1da0ff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  &--form {
+    height: 220px;
+    min-width: 290px;
+    background: #ffffff;
+    padding: 15px 30px 45px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    button {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+}
+
 .content--container {
   margin: 15px auto;
   flex-wrap: wrap;
@@ -7,6 +61,7 @@
   justify-content: center;
   align-content: center;
 }
+
 .navbar {
   display: flex;
   background: #1da0ff;
@@ -26,11 +81,7 @@
     display: flex;
     align-items: center;
     input {
-      padding-left: 15px;
-      min-width: 100%;
       height: 40%;
-      box-shadow: none;
-      border-radius: 30px;
       border: none;
     }
   }
@@ -54,12 +105,13 @@
     }
   }
 }
+
 button.primary-button {
   color: #ffffff;
   background: #1da0ff;
   border: none;
   border-radius: 30px;
-  padding: 5px 15px;
+  padding: 10px 20px;
   box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.4);
   &:hover {
     cursor: pointer;
@@ -105,6 +157,7 @@ button.primary-button {
     display: flex;
   }
 }
+
 .recipe {
   width: 100%;
   &--container {
@@ -146,6 +199,30 @@ button.primary-button {
     min-height: 220px;
     h2 {
       margin-top: 0;
+    }
+  }
+}
+
+.register {
+  width: 100%;
+  &--container {
+    position: relative;
+    background: rgba($color: #c4c4c4, $alpha: 0.2);
+    padding: 15px 0px 90px 0px;
+    &--form {
+      display: flex;
+    }
+    &--side {
+      width: 100%;
+      padding: 0 30px;
+      &:first-child {
+        border-right: 1px solid #ccc;
+      }
+    }
+    button {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
     }
   }
 }

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./App.scss";
-import { List } from "./pages/list";
 import { Navbar } from "./components/navbar";
+import { Login } from "./pages/login";
+import { Register } from "./pages/register";
+import { List } from "./pages/list";
 import { Recipe } from "./components/Recipe";
 
 const recipe = {
@@ -17,10 +19,18 @@ const recipe = {
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <main className="content--container">
-        <Recipe {...recipe} />
-      </main>
+      {true ? (
+        <Fragment>
+          <Navbar />
+          <main className="content--container">
+            <List />
+            {/* <Recipe {...recipe} /> */}
+            {/* <Register /> */}
+          </main>
+        </Fragment>
+      ) 
+      :(<Login /> )
+      }
     </div>
   );
 }
