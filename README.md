@@ -3,7 +3,7 @@
 
 Adicione a dependencia json-server globalmente
 
-```run yarn global add json-server```
+```yarn global add json-server```
 
 
 Instalar dependencias
