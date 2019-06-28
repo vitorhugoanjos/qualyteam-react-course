@@ -4,13 +4,16 @@
   "private": true,
   "dependencies": {
     "json-server": "^0.15.0",
-    "node-sass": "^4.12.0",
     "jsonwebtoken": "^8.5.1",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "dev": "concurrently \"yarn server-without-auth\" \"yarn start\" -k",
+    "dev-auth": "concurrently \"yarn server-auth\" \"yarn start\" -k ",
+    "server-without-auth": "json-server --watch db.json --port 4000",
     "server": "node server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -31,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1"
   }
 }
