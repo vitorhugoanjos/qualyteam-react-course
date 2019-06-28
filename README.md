@@ -8,14 +8,14 @@ Adicione a dependencia json-server globalmente
 
 Instalar dependencias
 
-```run yarn ```
+```yarn ```
 
 
 Para iniciar o servidor
 
-```run yarn server```
+```yarn server```
 
 
  Para iniciar a aplicação rode
  
-```run yarn start```
+```yarn start```
