@@ -1,9 +1,21 @@
 # qualyteam-react-course
 
-run yarn global add json-server to add json-server as global
 
-run yarn to install dependencies
+Adicione a dependencia json-server globalmente
 
-run yarn server to setup server
+```yarn global add json-server```
 
-run yarn start to start application
+
+Instalar dependencias
+
+```run yarn ```
+
+
+Para iniciar o servidor
+
+```run yarn server```
+
+
+ Para iniciar a aplicação rode
+ 
+```run yarn start```
