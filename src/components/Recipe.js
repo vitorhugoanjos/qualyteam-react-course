@@ -1,6 +1,13 @@
 import React from "react";
 
-const Recipe = ({ id, title, imageUrl, description, ingredients, preparo }) => (
+const Recipe = ({
+  id,
+  title,
+  imageUrl,
+  description,
+  ingredients,
+  preparation
+}) => (
   <div className="recipe">
     <div className="recipe--container">
       <figure>
@@ -19,7 +26,7 @@ const Recipe = ({ id, title, imageUrl, description, ingredients, preparo }) => (
     </div>
     <div className="recipe--preparation">
       <h2>Preparação</h2>
-      <p>{preparo}</p>
+      <p>{preparation}</p>
     </div>
   </div>
 );
