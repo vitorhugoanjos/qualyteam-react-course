@@ -11,8 +11,8 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "dev": "concurrently \"yarn server-without-auth\" \"yarn start\" -k",
-    "dev-auth": "concurrently \"yarn server-auth\" \"yarn start\" -k ",
+    "dev": "concurrently \"npm run server-without-auth\" \"npm run start\" -k",
+    "dev-auth": "concurrently \"npm run server-auth\" \"npm run start\" -k ",
     "server-without-auth": "json-server --watch db.json --port 4000",
     "server": "node server.js",
     "start": "react-scripts start",
