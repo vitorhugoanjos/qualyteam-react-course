@@ -51,6 +51,7 @@ const recipes = [
     ingredients: "Batata, óleo, sal."
   }
 ];
+
 const List = () => (
   <Fragment>
     {recipes.map(recipe => <Card key={recipe.id} {...recipe} />)}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../../components/button";
+
 const Register = () => (
   <div className="register">
     <h1>Nova receita</h1>
