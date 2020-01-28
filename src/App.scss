@@ -64,6 +64,9 @@ label {
 .navbar {
   display: flex;
   background: #1da0ff;
+  .navbar--logo-container {
+    flex: 1;
+  }
   figure,
   div {
     flex: 1;
