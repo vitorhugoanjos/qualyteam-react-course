@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 const Card = ({ id, title, description, imageUrl, ingredients }) => {
   const history = useHistory();
   function handleClick() {
-    history.push(`food/${id}`);
+    history.push(`food/details/${id}`);
   }
 
   return (
