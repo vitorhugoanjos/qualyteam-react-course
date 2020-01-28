@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.scss";
 import { Navbar } from "./components/navbar";
 import { Login } from "./pages/login";
@@ -18,20 +19,28 @@ const recipe = {
 
 function App() {
   return (
-    <div className="app">
-      {true ? (
-        <Fragment>
-          <Navbar />
-          <main className="content--container">
-            <List />
-            {/* <Recipe {...recipe} /> */}
-            {/* <Register /> */}
-          </main>
-        </Fragment>
-      ) 
-      :(<Login /> )
-      }
-    </div>
+    <Router>
+      <div className="app">
+        {true ? (
+          <Fragment>
+            <Navbar />
+            <main className="content--container">
+              <Switch>
+                <Route path="/" exact>
+                  <List />
+                </Route>
+                <Route path="/food/:id" exact>
+                  <Recipe />
+                </Route>
+              </Switch>
+              {/* <Register /> */}
+            </main>
+          </Fragment>
+        ) : (
+          <Login />
+        )}
+      </div>
+    </Router>
   );
 }
 
