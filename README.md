@@ -11,11 +11,6 @@ Instalar dependencias
 ```yarn ```
 
 
-Para iniciar o servidor
-
-```yarn server```
-
-
  Para iniciar a aplicação execute
  
 ```yarn dev```
