@@ -91,6 +91,8 @@ label {
     display: flex;
     justify-content: flex-end;
     .button--plus {
+      text-decoration: none;
+      text-align: center;
       height: 100%;
       width: 90px;
       color: #ffffff;
