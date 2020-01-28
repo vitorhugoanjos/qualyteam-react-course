@@ -5,8 +5,8 @@ import { AddButton } from "./add-button";
 
 const Navbar = () => (
   <nav className="navbar">
-    <Link to="/">
-      <figure className="navbar--logo-container">
+    <Link to="/" className="navbar--logo-container">
+      <figure className="">
         <img src={logo} alt="Uma imagem impressionante" />
       </figure>
     </Link>
