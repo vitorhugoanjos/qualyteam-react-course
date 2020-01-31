@@ -1,4 +1,4 @@
-# qualyteam-react-course
+# Qualyteam React Course
 
 
 Adicione a dependencia json-server globalmente
