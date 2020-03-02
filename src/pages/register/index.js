@@ -13,7 +13,7 @@ const Register = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    await api.post("food", {
+    await api.post("http://localhost:4000/food", {
       title,
       imgUrl: imageUrl,
       ingredients,

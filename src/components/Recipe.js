@@ -9,7 +9,7 @@ const Recipe = () => {
   useEffect(() => {
     async function fetchFood() {
       setLoading(true);
-      const response = await api.get(`food/${id}`);
+      const response = await api.get(`http://localhost:4000/food/${id}`);
       setRecipe(response.data);
       setLoading(false);
     }

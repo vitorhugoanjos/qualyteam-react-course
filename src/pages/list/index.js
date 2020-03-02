@@ -1,22 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Card } from "../../components/card";
-import { useFilter } from "../../context/food-list";
 
 const List = () => {
   const [recipes, setRecipes] = useState([]);
-  const { listFilter } = useFilter();
   useEffect(() => {
     async function getRecipes() {
-      const response = await api.get("food", {
-        params: {
-          title_like: listFilter
-        }
-      });
+      const response = await api.get("http://localhost:4000/food");
       setRecipes(response.data);
     }
     getRecipes();
-  }, [listFilter]);
+  }, []);
 
   return (
     <>
